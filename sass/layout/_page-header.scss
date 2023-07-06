@@ -3,6 +3,12 @@
     display: flex;
     z-index: 999;
 
+    &__hero {
+        min-height: 100vh;
+        max-width: 100%;
+        background-image: $gradient, url("../images/banner.jpg");
+        background-size: cover;
+    }
     .container {
         display: flex;
         flex-wrap: wrap;
