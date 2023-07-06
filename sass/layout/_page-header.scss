@@ -8,6 +8,8 @@
         max-width: 100%;
         background-image: $gradient, url("../images/banner.jpg");
         background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
     }
     .container {
         display: flex;
@@ -33,5 +35,8 @@
     // mobile
     .page-header {
         width: 100%;
+        &__hero {
+            background-image: $gradient, url("../images/banner.jpg");
+        }
     }
 }

@@ -26,13 +26,6 @@ img {
   padding: 0 15px;
 }
 
-.hero {
-  min-height: 100vh;
-  max-width: 100%;
-  background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url("../../images/banner.jpg");
-  background-size: cover;
-}
-
 .section {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -190,7 +183,7 @@ img {
     font-size: 72px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .banner {
     padding-top: 200px;
   }
@@ -489,6 +482,14 @@ img {
   display: flex;
   z-index: 999;
 }
+.page-header__hero {
+  min-height: 100vh;
+  max-width: 100%;
+  background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url("../images/banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
 .page-header .container {
   display: flex;
   flex-wrap: wrap;
@@ -509,6 +510,9 @@ img {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .page-header {
     width: 100%;
+  }
+  .page-header__hero {
+    background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url("../images/banner.jpg");
   }
 }
 .page-footer {
