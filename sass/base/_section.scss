@@ -1,0 +1,48 @@
+.hero {
+    min-height: 100vh;
+    max-width: 100%;
+    background-image: $gradient, url("../../images/banner.jpg");
+    background-size: cover;
+}
+
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__title {
+        color: $text-second-color;
+        font-size: 30px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__discription {
+        color: $text-second-color;
+        font-size: 24px;
+        font-family: "Kaushan Script";
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__dividers {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: 4px solid $brand-second-color;
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    //  desktop
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    // tablet
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {
+    //mobile
+}

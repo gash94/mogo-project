@@ -1,0 +1,13 @@
+$brand-main-color: #95e1d3;
+$brand-second-color: #f38181;
+$brand-third-color: #fce38a;
+$text-main-color: #fff;
+$text-second-color: #333333;
+$text-third-color: #999999;
+
+$gradient: linear-gradient(
+    0deg,
+    rgba(#fce38a, 0.9) 0%,
+    rgba(#f38181, 0.9) 100%
+);
+$transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);

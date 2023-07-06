@@ -1,0 +1,44 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-transform: uppercase;
+    width: 450px;
+
+    &__item {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__link {
+        position: relative;
+        text-decoration: none;
+        color: $text-main-color;
+        transition: $transition;
+        transition-property: color;
+
+        &:active,
+        &:hover,
+        &:focus {
+            color: $brand-third-color;
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                border-top: 4px solid $brand-third-color;
+                border-radius: 2px;
+                width: 100%;
+                bottom: -12px;
+                left: 0;
+            }
+        }
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    // mobilie
+    .nav {
+        display: none;
+    }
+}

@@ -1,0 +1,67 @@
+.team {
+    display: grid;
+    justify-items: center;
+    column-gap: 20px;
+
+    &__item {
+        position: relative;
+        cursor: pointer;
+        padding-bottom: 30px;
+        width: 380px;
+        &:hover .overlay {
+            opacity: 1;
+        }
+    }
+    &__image {
+        width: 380px;
+        height: 470px;
+    }
+    &__description {
+        color: $text-third-color;
+        padding-bottom: 90px;
+    }
+
+    &__person-name {
+        color: $text-second-color;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-top: 24px;
+        padding-bottom: 10px;
+    }
+    &__position {
+        color: $text-third-color;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        z-index: 101;
+        &-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1px;
+        }
+    }
+    &__icon {
+        fill: $brand-second-color;
+        background-color: $brand-third-color;
+        transition: $transition;
+        transition-property: fill, background-color;
+
+        &:active,
+        &:hover,
+        &:focus {
+            fill: $text-main-color;
+            background-color: $brand-second-color;
+        }
+    }
+}
+
+@media (min-width: 1250px) {
+    .team {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

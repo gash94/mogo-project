@@ -1,0 +1,22 @@
+.head-panel {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 80px;
+    margin-left: 42px;
+    margin-right: 42px;
+    &__icon {
+        fill: $text-main-color;
+        transition: $transition;
+        transition-property: fill;
+        &:hover {
+            fill: $brand-third-color;
+        }
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    // mobilie
+    .head-panel {
+        display: none;
+    }
+}

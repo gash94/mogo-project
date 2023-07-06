@@ -1,0 +1,11 @@
+.logo {
+    flex-grow: 2;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+
+    &__link {
+        color: $text-main-color;
+    }
+}

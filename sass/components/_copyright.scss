@@ -1,0 +1,17 @@
+.copyright {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    &__link {
+        color: $brand-second-color;
+        transition: $transition;
+        transition-property: color;
+        &:hover {
+            color: $brand-third-color;
+        }
+    }
+    &__label {
+        color: $text-second-color;
+        font-size: 14px;
+    }
+}
